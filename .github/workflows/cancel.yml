@@ -1,5 +1,7 @@
 name: Cancel
 on: [push]
+permissions:
+  actions: write
 jobs:
   cancel:
     name: "Cancel Previous Build"
