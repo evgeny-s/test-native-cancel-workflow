@@ -10,4 +10,4 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Sleep for 90 seconds
-        run: sleep 900
+        run: sleep 90
