@@ -5,7 +5,7 @@ permissions:
 jobs:
   cancel:
     name: "Cancel Previous Build"
-    if: github.ref != 'refs/heads/main'
+    if: github.workflow != 'Cancel' && github.ref != 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
