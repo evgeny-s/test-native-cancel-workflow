@@ -11,4 +11,4 @@ jobs:
         with:
           workflow_id: ".github/workflows/flow1.yml,.github/workflows/flow2.yml"
           all_but_latest: true
-
+	  access_token: ${{ github.token }}
