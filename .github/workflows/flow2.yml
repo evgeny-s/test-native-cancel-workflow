@@ -1,4 +1,4 @@
-name: (2) Sleep for 30 seconds
+name: (2) Sleep for 90 seconds
 
 on:
   push:
