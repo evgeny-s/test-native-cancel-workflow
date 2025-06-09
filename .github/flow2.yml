@@ -1,0 +1,16 @@
+name: (2) Sleep for 30 seconds
+
+on:
+  push:
+      
+jobs: 
+  test-timeout-2:
+    name: Sleep job
+    runs-on: ubuntu-latest
+    timeout-minutes: 1                                                      
+    steps:
+      - name: Sleep for 30 seconds
+        run: sleep 30
+        
+        
+
