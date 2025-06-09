@@ -3,6 +3,10 @@ name: Sleep for 90 seconds
 on:
   push:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test-timeout:
     name: Sleep job
